@@ -43,12 +43,10 @@ for i in range(n-2, -1,-1):
     x[i]=a[i][n]
     for j in range(i+1,n):
         x[i]=x[i]-a[i][j]*x[j]
-        
     x[i]=x[i]/a[i][i]
 for i in range(n):
     print('X%d = %0.2f'%(i,x[i]),end=' ')
 ```
-
 ## Output:
 ![gaussian elemination](https://user-images.githubusercontent.com/113497406/192081482-e6067f86-90ef-494d-a77d-6bf21c70b1cf.png)
 
